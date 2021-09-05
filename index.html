@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polo Obrero sp2</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflar
+    e.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="titulo"><span>Partido Obrero</span></h1>    
+    <div class="nav-bg">
+    <nav class="navegacion-principal contenedor">
+       <a href="index.html">Inicio</a>
+       <a href="partido-obrero.html">Partido Obrero</a>
+       <a href="ollas.html">Comedores</a> 
+    </nav>
+    </div>
+ </header>
+ <section class="hero">
+    <div class="contenido-hero">
+    <h2>Polo Obrero</h2>
+    <div class="ubicacion">
+        <p><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFC107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z"/>
+            <circle cx="12" cy="11" r="3" />
+            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 0 1 -2.827 0l-4.244-4.243a8 8 0 1 1 11.314 0z" />
+          </svg>
+        </p>
+    <p>Moreno, Santa Paula</p>
+    </div>
+    </div> 
+</section><!-- .contenido-hero -->
+<!--cards-->
+<main class="section-card">
+<h1 class="title">Galerias de imagenes de Santa Paula 2</h1>
+
+    <div class="container">
+        <div class="card">
+            <img src="img/polo1.jpg" alt="">
+            <h4>slider con Imagenes</h4>
+            <p>Santa Paula 2, es fundadad por la compañera Vanesa Correa, y acompaña la lucha de Frente de Izquierda desde 1970.</p>
+            <a class="boton" href="slider-img.html">Galeria de Imagenes</a>
+        </div>
+
+        <div class="card">
+            <img src="img/ollas.jpeg" alt="">
+            <h4>slider con iamgenes</h4>
+            <p>Las 45 ollas y comedores populares de Santa Paula 2 ayudan y alimentan a mas de 1500 Familias del partido de Moreno dia a dia.</p>
+            <a class="boton" href="comedores.html">Galeria de Imagenes</a>
+        </div>
+    </div>
+</main>
+<!-- Formulario-->
+    <section >
+        <h2 class="contacto">Contacto</h2>
+        <form class="formulario" method="post" action="enviar2.php"">
+            <fieldset>
+               <legend>Contactenos llenando todos los campos</legend>
+            <div class="contenedor-campos">
+            <div class="campo">
+               <label >Nombre</label>
+               <input class="input-text" name="nombre" type="text" placeholder="Tu Nombre" id="nombre" required="required">
+            </div>
+            <div class="campo">
+               <label for="">Telefono</label>
+               <input class="input-text" type="tel" name="telefono" placeholder="Tu Telefono" id="telefono">
+            </div> 
+            <div class="campo">
+               <label >Correo</label>
+               <input class="input-text" type="email" name="email" placeholder="Tu Email" id="email" required="required">
+            </div>
+
+            <div class="campo">
+               <label >Mensaje</label>
+               <textarea class="input-text" id="mensaje" name="mensaje"></textarea>
+            </div>
+            </div><!-- Este es el contenedor de los campos-->
+            <div class="alinear-derecha flex">
+               <button class="boton w-sm-100" onclick= 'return enviarFormulario()' type="submit" value="Enviar">Enviar</button>
+            </div>
+            </fieldset>
+             <div class="error" id="error"></div>
+        </form>
+    </section>
+    
+    <div class="footer-basic">
+        <footer>
+            <div class="frente">
+                <a href="https://po.org.ar/"><img src="img/descarga.png" alt=""></a>
+            </div>
+            <div class="social"><a href="https://www.google.com.ar/maps/place/Mariano+de+Vedia+y+Mitre+9749,+Moreno,+Provincia+de+Buenos+Aires/@-34.604743,-58.7859352,17z/data=!3m1!4b1!4m5!3m4!1s0x95bc968777be037d:0xc36830beaa377bb2!8m2!3d-34.6047474!4d-58.7837465"><ion-icon name="navigate"></ion-icon></a><a href="https://www.instagram.com/polo.obrero/?hl=es"><i class="icon ion-social-instagram"></i></a><a href="https://twitter.com/PartidoObrero?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/PrensaObrera"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Inicio</a></li>
+                <li class="list-inline-item"><a href="partido-obrero.html">Partido Obrero</a></li>
+                <li class="list-inline-item"><a href="comedores.html">Comedores</a></li>
+
+            </ul>
+            <p class="copyright">River Web Desing © 2021</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.4.1.slim.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
